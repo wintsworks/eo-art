@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /php/
+Disallow: /scripts/php/
+Disallow: /scripts/js/site-edit/
+Disallow: *?

@@ -1,0 +1,79 @@
+/* Site Editor */
+
+#navContainer {
+    width: 100% !important;
+}
+
+.ww-content-edit {
+    border: 3px solid grey;
+    background-color: #8d74be76;
+    margin-bottom: 1%;
+}
+
+.edit-entry {
+    font-size: 14px;
+    letter-spacing: 0 !important;
+    background-color: #806595;
+    padding: 5px;
+    color: #babece;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    margin-right: 5px;
+}
+
+.edit-entry:hover {
+    color: black;
+}
+
+.edit-entry:visited {
+    color: #babece;
+}
+
+a.edit-entry {
+    box-shadow: 1px 1px 1px 1px grey;
+    padding: 6px !important;
+}
+
+.edit-entry:hover,
+a.edit-entry:hover {
+    box-shadow: 1px 1px 5px 1px black;
+    font-weight: bolder;
+}
+
+.button-show {
+    display: inline-block;
+}
+
+#previewArea {
+    border: 5px solid #2e2e2e !important;
+}
+
+#return-edit {
+    font-size: 14px;
+    letter-spacing: 0 !important;
+    background-color: #806595;
+    padding: 5px;
+    color: #babece;
+    border-radius: 25%;
+    text-decoration: none;
+    border: none;
+}
+
+#previewHeader::after {
+    content: "The thin border just shows space occupied by content on page.";
+    font-size: .5em;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 1399px) {
+    #navContainer {
+        font-size: .9em !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .nav-link {
+        padding: 10px !important;
+    }
+}

@@ -1,0 +1,425 @@
+/* Color Palette: 
+
+#2f2e3d - Dark Dark Purple
+#5a516c - Dark/Grey Purple
+#806595 - Lavender
+#6cb9be - Off-Teal
+#babece - Grey
+
+Font Families:
+    font-family: 'Acme', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Quattrocento Sans', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cabin&family=Caveat:wght@600&family=Crimson+Text:wght@400;700&family=Hanalei+Fill&family=Indie+Flower&family=Kaushan+Script&family=Quattrocento+Sans&display=swap');
+
+:root {
+    --bodyBackground: #2f2e3d;
+    --articleSectionBackground: #babece;
+    --navBackground: #5a516c;
+    --titleColor: #babece;
+    --footerBackground: var(--navBackground);
+}
+
+body {
+    background-color: var(--bodyBackground);
+    font-family: 'Cabin', sans-serif;
+    background-image: url("../images/eo-background.jfif");
+}
+
+header {
+    padding-bottom: 0 !important;
+}
+
+#headerContainerContainer {
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    border-radius: 90%;
+}
+
+#headerContainer {
+    background-color: var(--bodyBackground);
+
+    background: linear-gradient(90deg, var(--bodyBackground) 50%, rgba(0, 212, 255, 0) 100%);
+    justify-content: left;
+    padding: 0 .5% .5% 1.5%;
+    width: 50% !important;
+}
+
+#commissionsHeader::after {
+    content: "(Items Separated by Comma and space: 'example 1, example 2, etc')" !important;
+    font-size: .6em !important;
+    color: #585858 !important;
+    margin-left: 5px;
+}
+
+#stretchHeader::after {
+    content: "(Disabled for now, working on this)" !important;
+    font-size: .6em !important;
+    color: #585858 !important;
+    margin-left: 5px;
+}
+
+h1,
+h3,
+h4 {
+    letter-spacing: .30em;
+}
+
+h1 {
+    width: fit-content;
+    color: var(--titleColor);
+    margin: 0 !important;
+    font-family: 'Indie Flower', cursive;
+}
+
+h1::first-letter {
+    font-size: 1.25em;
+}
+
+/* #headerSpacer {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-color: var(--navBackground) !important;
+} */
+
+h3 {
+    letter-spacing: .2em !important;
+    padding: 1% !important;
+    padding-bottom: 0px !important;
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: .4em;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+#navDiv {
+    padding: .5% !important;
+}
+
+nav,
+#navSpacer,
+#navSpacer2 {
+    background-color: var(--navBackground) !important;
+    letter-spacing: .3em;
+}
+
+#navContainer {
+    width: 80% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    background: linear-gradient(90deg, var(--navBackground) 50%, rgba(0, 212, 255, 0) 100%);
+}
+
+nav {
+    background-color: transparent !important;
+
+    flex: 0 0 100% !important;
+}
+
+#navSpacer {
+    background-color: transparent !important;
+    color: transparent;
+    padding-right: 0 !important;
+    /* clip-path: polygon(0 100%, 61% 63%, 0 54%, 0 55%, 100% 100%, 100% 0); */
+    width: fit-content !important;
+    background-image: url("../images/eo-resize.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transform: translateY(-5px) rotate(-10deg);
+}
+
+#navSpacer2 {
+    color: transparent;
+    background-color: transparent !important;
+    padding-right: 0 !important;
+    background-image: url("../images/eo-tail.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transform: translateX(-10px);
+}
+
+#navSpacer p {
+    visibility: hidden;
+}
+
+main {
+    margin-top: .25% !important;
+    background-color: var(--articleSectionBackground);
+    overflow: hidden;
+    transition: height 1.5s, max-height 1.5s !important;
+    padding-right: 0;
+}
+
+article,
+section {
+    background-color: var(--articleSectionBackground);
+    padding: 25px !important;
+}
+
+article p,
+section p,
+footer p,
+.user-text {
+    letter-spacing: .1em;
+}
+
+img {
+    width: 95%;
+}
+
+input {
+    margin-bottom: 1%;
+}
+
+fieldset {
+    margin-top: 1%;
+}
+
+.ww-button {
+    margin-top: 2%;
+    padding: .5%;
+}
+
+.ww-content img {
+    padding-bottom: 20px;
+}
+
+.sectionDiv {
+    background-color: var(--articleSectionBackground);
+}
+
+footer {
+    background-color: var(--footerBackground);
+    color: #babece;
+}
+
+/* footer div:first-of-type {
+
+} */
+
+/* Overriding Bootstrap Styles */
+
+.navbar-brand {
+    font-size: 1.125em;
+    padding: 0 !important;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: 550 !important;
+}
+
+.nav-link {
+    color: #babece !important;
+    padding-right: 2rem !important;
+    font-size: .85em !important;
+}
+
+/* Various */
+
+#contructionImage {
+    position: relative;
+    padding: 0 !important;
+}
+
+#constructPage {
+    overflow: hidden;
+}
+
+#constructPage header {
+    background-color: var(--bodyBackground);
+    width: fit-content;
+    margin: 0 auto !important;
+    padding: 1% !important;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 2px 2px 10px black;
+}
+
+#constructPage section {
+    background-color: transparent;
+    padding: 10% !important;
+    padding-top: 0 !important;
+}
+
+#constructPage hr {
+    color: white !important;
+}
+
+#constructPage h3 {
+    color: #babece;
+    font-size: 1.5em;
+    /* background-color: var(--navBackground); */
+
+    padding: 1% !important;
+    margin: 0 !important;
+    margin: 0 auto !important;
+}
+
+#constructPage h3::after {
+    opacity: 50%;
+}
+
+#constructPage header hr {
+    margin: 0 auto !important;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+    box-shadow: inset 1px 1px 1px 1px grey;
+}
+
+.form-select,
+.form-control {
+    background-color: #e2dddd !important;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: var(--navBackground) !important;
+    box-shadow: 0 0 0 .25em var(--navBackground) !important;
+}
+
+input[type="submit"],
+button,
+select {
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.user-entries {
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+/* Animation Uses */
+
+/* .flash-green {
+
+} */
+
+/* End Animation Uses */
+
+/* Custom Themes */
+
+
+
+#siteEdgeLabel::after {
+    content: "(Will stretch the page for all users to fit the edges of the screen)";
+    margin-left: 10px !important;
+    font-size: .85em !important;
+    color: var(--navBackground) !important;
+}
+
+/*  */
+
+@media screen and (max-width: 991px) {
+    #headerContainerContainer {
+        width: 100%;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    #headerContainer {
+
+        background: var(--bodyBackground);
+        justify-content: center;
+        padding: 0 .5% .5% 1.5%;
+        width: 100% !important;
+    }
+
+    nav {
+        background-color: var(--navBackground) !important;
+        letter-spacing: .3em;
+    }
+
+    #navContainer {
+        width: 100% !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    nav {
+        background: var(--navBackground);
+        flex: 0 0 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 1399px) {
+    #navContainer {
+        font-size: .9em !important;
+
+    }
+
+    .nav-link {
+        padding: 10px !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .nav-link {
+        padding: 8px !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #constructPage header {
+        width: 100%;
+    }
+
+    #constructPage div[id*="navSpacer"] {
+        font-size: .5em;
+    }
+
+    #constructPage header h3 {
+        font-size: 1em;
+    }
+
+    #constructHrContainer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    div[id*="navSpacer"] {
+        width: 50%;
+    }
+
+    h1 {
+        width: 100% !important;
+    }
+
+    #headerContainer {
+        background-color: var(--bodyBackground);
+    }
+}
+
+@media screen and (max-width: 285px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 263px) {
+
+    h1 {
+        font-size: 1rem;
+    }
+}

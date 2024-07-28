@@ -1,0 +1,227 @@
+/* Color Palette: 
+
+#2f2e3d - Dark Dark Purple
+
+#5a516c - Dark/Grey Purple
+
+#806595 - Lavender
+
+#6cb9be - Off-Teal
+
+#babece - Grey
+
+Font Families:
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Cabin', sans-serif;
+
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Crimson Text', serif;
+
+    font-family: 'Indie Flower', cursive;
+
+    font-family: 'Quattrocento Sans', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cabin&family=Caveat:wght@600&family=Crimson+Text:wght@400;700&family=Hanalei+Fill&family=Indie+Flower&family=Kaushan+Script&family=Quattrocento+Sans&display=swap');
+
+:root {
+    --bodyBackground: #2f2e3d;
+    --articleSectionBackground: #babece;
+    --navBackground: #5a516c;
+    --titleColor: #babece;
+    --footerBackground: var(--navBackground);
+}
+
+body {
+    background-color: var(--bodyBackground);
+    font-family: 'Cabin', sans-serif;
+    background-image: url("../../images/eo-background.jfif");
+}
+
+header {
+    padding-top: 1.5% !important;
+    padding-bottom: 0 !important;
+}
+
+h1,
+h3 {
+    letter-spacing: .30em;
+}
+
+h1 {
+    width: fit-content;
+    color: var(--titleColor);
+    margin: 0 !important;
+    font-family: 'Indie Flower', cursive;
+}
+
+h1::first-letter {
+    font-size: 1.25em;
+}
+
+h3 {
+    letter-spacing: .2em !important;
+    padding: 2.5% !important;
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: .4em;
+}
+
+hr {
+    margin-bottom: 5%;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+#navDiv {
+    padding: .5% !important;
+}
+
+nav,
+#navSpacer,
+#navSpacer2 {
+    background-color: var(--navBackground) !important;
+    letter-spacing: .3em;
+}
+
+#navSpacer {
+    background-color: transparent !important;
+    color: transparent;
+    padding-right: 0 !important;
+    /* clip-path: polygon(0 100%, 61% 63%, 0 54%, 0 55%, 100% 100%, 100% 0); */
+    width: fit-content !important;
+    background-image: url("../../images/eo-resize.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transform: translateY(-5px) rotate(-10deg);
+}
+
+#navSpacer2 {
+    color: transparent;
+    background-color: transparent !important;
+    padding-right: 0 !important;
+    background-image: url("../../images/eo-tail.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transform: translateX(-10px);
+}
+
+#navSpacer p {
+    visibility: hidden;
+}
+
+main {
+    margin-top: .25% !important;
+}
+
+article,
+section {
+    background-color: var(--articleSectionBackground);
+    padding: 25px !important;
+}
+
+article p, section p, footer p {
+    padding-left: 5%;
+    letter-spacing: .1em;
+}
+
+.sectionDiv {
+    background-color: var(--articleSectionBackground);
+}
+
+footer {
+    background-color: var(--footerBackground);
+    color: #babece;
+}
+
+/* Overriding Bootstrap Styles */
+
+.navbar-brand {
+    font-size: 1.125em;
+    padding: 0 !important;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: 550 !important;
+}
+
+.nav-link {
+    color: #babece !important;
+    padding-right: 2rem !important;
+    font-size: .85em !important;
+}
+
+/* Various */
+
+#contructionImage {
+    position: relative;
+    padding: 0 !important;
+}
+
+#constructPage {
+    overflow: hidden;
+}
+
+#constructPage header {
+    background-color: var(--bodyBackground);
+    width: fit-content;
+    margin: 0 auto !important;
+    padding: 1% !important;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 2px 2px 10px black;
+}
+
+#constructPage section {
+    background-color: transparent;
+    padding: 10% !important;
+    padding-top: 0 !important;
+}
+
+#constructPage hr {
+    color: white !important;
+}
+
+#constructPage h3 {
+    color: #babece;
+    font-size: 1.5em;
+    /* background-color: var(--navBackground); */
+    
+    padding: 1% !important;
+    margin: 0 !important;
+    margin: 0 auto !important;
+}
+
+#constructPage h3::after {
+    opacity: 50%;
+}
+
+#constructPage header hr {
+    margin: 0 auto !important;
+}
+
+@media screen and (max-width: 768px) {
+    #constructPage header {
+        width: 100%;
+    }
+
+    #constructPage div[id*="navSpacer"] {
+        font-size: .5em;
+    }
+
+    #constructPage header h3 {
+        font-size: 1em;
+    }
+
+    #constructHrContainer {
+        visibility: hidden;
+    }
+}
